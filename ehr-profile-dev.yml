@@ -1,0 +1,19 @@
+imcloud:
+  datasource:
+    url: jdbc:mysql://172.16.1.240:3306/ehr?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: Hello!!!123
+    driverClassName: com.mysql.jdbc.Driver
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20 
